@@ -1,8 +1,10 @@
 #' Create percentile table function
 #'
-#' This function calculates percentiles by column for a given data set 
+#' This function calculates percentiles by column for a given data set. There are no checks for NAs or anything 
+#' else and thus this isa development level function.
 #' @param data Data.frame or matrix in which you want to know the percentiles for each column
 #' @keywords perc
+#' @return A data.frame with percentiles in the columns corresponding to the columns input 
 #' @export
 #' @examples
 #' x = matrix(rnorm(1000),ncol=4)

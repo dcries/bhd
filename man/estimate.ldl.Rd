@@ -9,10 +9,17 @@ estimate.ldl(data)
 \arguments{
 \item{data}{Data.frame or matrix where the first column is what you want to predict, and remaining columns are what you want to consider as possibly covariates}
 }
+\value{
+A vector of length equal to number of rows of input data with predicted values of LDL
+}
 \description{
-This function uses LASSO to select predictors in order to run linear regression to predict LDL for individuals. Outputs a vector of predicted values of LDL based on input
+This function uses LASSO to select predictors in order to run linear regression to predict LDL for individuals. 
+Outputs a vector of predicted values of LDL corresponding on input
+There are no checks for NAs or anythingelse and thus this isa development level function.
 }
 \examples{
-cat_function()
+response <- rnorm(1000)
+predictors <- matrix(rnorm(10000),ncol=10)
+estimate.ldl(cbind(response,predictors))
 }
 \keyword{preds}

@@ -9,10 +9,15 @@ create.perc.table(data)
 \arguments{
 \item{data}{Data.frame or matrix in which you want to know the percentiles for each column}
 }
+\value{
+A data.frame with percentiles in the columns corresponding to the columns input
+}
 \description{
-This function calculates percentiles by column for a given data set
+This function calculates percentiles by column for a given data set. There are no checks for NAs or anything 
+else and thus this isa development level function.
 }
 \examples{
-cat_function()
+x = matrix(rnorm(1000),ncol=4)
+create.perc.table(x)
 }
 \keyword{perc}
