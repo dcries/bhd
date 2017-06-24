@@ -5,7 +5,6 @@
 #' There are no checks for NAs or anythingelse and thus this isa development level function.
 #' @param data Data.frame or matrix where the first column is what you want to predict, and remaining columns are what you want to consider as possibly covariates
 #' @keywords preds
-#' @return A vector of length equal to number of rows of input data with predicted values of LDL
 #' @export
 #' @examples
 #' response <- rnorm(1000)
