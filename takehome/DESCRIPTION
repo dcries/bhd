@@ -1,0 +1,11 @@
+Package: takehome
+Title: Calculates percentile table and determines important variables
+Version: 0.0.0.9000
+Authors@R: person("Daniel", "Ries", email = "dcries@iastate.edu", role = c("aut", "cre"))
+Description: This package is for part 2.3 of BHD take home assignment. This package has two functions,
+one of which calculates percentile tables for all variables, and the other uses LASSO to determine which variables
+are important in predicting LDL-C for an individual.
+Depends: R (>= 3.3.2)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
